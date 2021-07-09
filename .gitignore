@@ -1,0 +1,13 @@
+bin/
+dist/
+lib/
+build/
+installer/
+release-builds/
+node_modules/
+Squirell.exe
+*.swp
+.idea/
+.vs/
+.vscode/
+.DS_Store

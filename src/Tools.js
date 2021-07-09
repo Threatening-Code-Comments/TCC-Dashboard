@@ -1,0 +1,1 @@
+export const getGridCellSize = () => (window.innerWidth - 100) / 12;

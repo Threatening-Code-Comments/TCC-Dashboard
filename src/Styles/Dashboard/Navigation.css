@@ -1,0 +1,13 @@
+.navigation {
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 60px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navigation > * {
+  margin: 0 15px;
+}

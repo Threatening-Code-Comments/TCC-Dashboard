@@ -1,0 +1,31 @@
+.weather {
+  position: relative;
+}
+
+.weather > * {
+  display: block;
+  text-align: center;
+}
+
+.weatherIcon {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.weatherTemperature {
+  top: -0.2em;
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 0.2em;
+}
+
+.weatherDescription {
+  top: -0.5em;
+  margin-bottom: 2em;
+}
+
+.weatherFeelsLike, .weatherHumidity {
+  top: -0.2em;
+  margin-bottom: 0.2em;
+}

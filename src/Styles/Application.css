@@ -1,0 +1,22 @@
+.application {
+  width: 100vw;
+  height: 100vh;
+}
+
+.application > * {
+  background: inherit;
+}
+
+.application > *:not(.navigation) {
+  height: calc(100vh - 60px);
+}
+
+.container {
+  margin: 0;
+  padding: 35px 50px;
+  background: inherit;
+  width: 100%;
+  height: calc(100% - 60px);
+  overflow: hidden;
+  box-sizing: border-box;
+}
