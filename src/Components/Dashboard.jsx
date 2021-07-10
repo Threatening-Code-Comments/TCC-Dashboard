@@ -1,15 +1,17 @@
 import React, { useContext } from "react";
 import { UserContext } from "../Providers/UserProvider";
 import WeatherProvider from "../Providers/WeatherProvider";
+import IconProvider from "../Providers/IconProvider";
 
 import WeatherModule from "./Dashboard/WeatherModule";
+import RoutineModule from "./Dashboard/RoutineModule";
 import QuoteOfTheDay from "./Dashboard/QuoteOfTheDay";
 
 import { getGridCellSize } from "../Tools";
 import "../Styles/Dashboard/Dashboard.css";
 
 const Dashboard = () => {
-  const { user, preferences } = useContext(UserContext);
+  const { user } = useContext(UserContext);
   const { displayName } = user;
 
   const gridCellSize = getGridCellSize();
@@ -18,9 +20,6 @@ const Dashboard = () => {
     <div className="container dashboardContainer">
       <h1>Good morning, {displayName}!</h1>
       <QuoteOfTheDay />
-      <div className="glass card">
-        <p>{JSON.stringify(preferences)}</p>
-      </div>
       <div
         className="dashboardGrid"
         style={{
@@ -31,6 +30,7 @@ const Dashboard = () => {
         <WeatherProvider>
           <WeatherModule />
         </WeatherProvider>
+        <RoutineModule />
       </div>
     </div>
   );

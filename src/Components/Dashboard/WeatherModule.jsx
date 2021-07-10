@@ -10,8 +10,10 @@ const WeatherModule = () => {
 
   const gridCellSize = getGridCellSize();
 
-  const gridStartX = 11, gridStartY = 1;
-  const gridWidth = 2, gridHeight = 3;
+  const gridStartX = 11,
+    gridStartY = 1;
+  const gridWidth = 2,
+    gridHeight = 3;
 
   return (
     <div
@@ -28,7 +30,7 @@ const WeatherModule = () => {
         src={weatherData.icon}
         alt=""
         className="weatherIcon"
-        style={{ width: `${gridCellSize / 2 * gridWidth}px` }}
+        style={{ width: `${(gridCellSize / 2) * gridWidth}px` }}
       />
       <span className="weatherTemperature">{weatherData.temperature}</span>
       <span className="weatherDescription">{weatherData.description}</span>

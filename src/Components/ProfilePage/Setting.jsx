@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-import { dataWrite } from "../../../Firebase";
+import { dataWrite } from "../../Firebase";
 
 import { FaRegSave } from "react-icons/fa";
-import "../../../Styles/Dashboard/ProfilePage/Setting.css";
+import "../..//Styles/ProfilePage/Setting.css";
 
 const Setting = (props) => {
   const { initialContent, name, path, placeholder } = props;

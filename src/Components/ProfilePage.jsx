@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { UserContext } from "../Providers/UserProvider";
 
-import Setting from "./Dashboard/ProfilePage/Setting";
+import Setting from "./ProfilePage/Setting";
 
 import { auth } from "../Firebase";
 import { Link } from "@reach/router";
@@ -15,7 +15,7 @@ const ProfilePage = () => {
       <h1>Profile of {displayName}</h1>
       <h3>{email}</h3>
 
-      {preferences ? (
+      {preferences && preferences.weather ? (
         <Setting
           name="Open Weather Map Key"
           path="weather/openWeatherMapKey"
@@ -23,7 +23,7 @@ const ProfilePage = () => {
           initialContent={preferences.weather.openWeatherMapKey}
         />
       ) : null}
-      {preferences ? (
+      {preferences && preferences.background ? (
         <Setting
           name="Background Image URL"
           path="background/imageURL"

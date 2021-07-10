@@ -5,7 +5,7 @@ build/
 installer/
 release-builds/
 node_modules/
-Squirell.exe
+Squirel.exe
 *.swp
 .idea/
 .vs/

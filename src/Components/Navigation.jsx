@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { Link } from "@reach/router";
-import { UserContext } from "../../Providers/UserProvider";
+import { UserContext } from "../Providers/UserProvider";
 
 import { FaHome } from "react-icons/fa";
-import ImageButton from "../../Styles/ImageButton";
-import "../../Styles/Dashboard/Navigation.css";
+import ImageButton from "../Styles/ImageButton";
+import "../Styles/Navigation.css";
 
 const Navigation = () => {
   const { user } = useContext(UserContext);

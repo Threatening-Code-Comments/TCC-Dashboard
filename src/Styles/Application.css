@@ -16,7 +16,7 @@
   padding: 35px 50px;
   background: inherit;
   width: 100%;
-  height: calc(100% - 60px);
+  height: 100%;
   overflow: hidden;
   box-sizing: border-box;
 }

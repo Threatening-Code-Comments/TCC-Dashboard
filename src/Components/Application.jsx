@@ -5,7 +5,7 @@ import { UserContext } from "../Providers/UserProvider";
 import SignIn from "./SignIn";
 import ProfilePage from "./ProfilePage";
 import Dashboard from "./Dashboard";
-import Navigation from "./Dashboard/Navigation";
+import Navigation from "./Navigation";
 
 import "../Styles/Application.css";
 
@@ -16,7 +16,7 @@ const Application = () => {
       className="application"
       style={{
         background: `url(${
-          preferences
+          preferences && preferences.background && preferences.background.imageURL
             ? preferences.background.imageURL
             : "https://cdn.wallpapersafari.com/25/18/HFWhux.png"
         }) center center / cover no-repeat fixed`

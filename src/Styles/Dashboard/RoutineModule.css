@@ -1,0 +1,54 @@
+.routine {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.noRoutines {
+  font-size: 0.65em;
+}
+
+.routineInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.routineInfo .routineName {
+  font-weight: 700;
+  font-size: 0.7em;
+  margin: 0 10px 2px 0;
+}
+
+.routineInfo .routineMode {
+  font-size: 0.6em;
+}
+
+.routineTiles {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "Tile0 Tile1" "Tile2 Tile3";
+  margin-bottom: 16px;
+}
+
+.routineTile0 {
+  grid-area: Tile0;
+}
+
+.routineTile1 {
+  grid-area: Tile1;
+}
+
+.routineTile2 {
+  grid-area: Tile2;
+}
+
+.routineTile3 {
+  grid-area: Tile3;
+}
+
+.routineTileAll {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
