@@ -13,12 +13,10 @@ const RoutineModule = () => {
   const gridCellSize = getGridCellSize();
   const gridStartX = 3,
     gridStartY = 4;
-  const gridWidth = 4,
+  const gridWidth = 2,
     gridHeight = 2;
 
   const iconSize = 48;
-
-  console.log(routines);
 
   return (
     <div

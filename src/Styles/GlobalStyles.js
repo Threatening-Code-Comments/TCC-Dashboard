@@ -1,12 +1,24 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
+  :root {
+    --main-color: #FFFC;
+    --main-color-darker: #FFF6;
+    --main-color-ligher: #FFFF;
+    --button-hover-box-shadow: 0 7.5px 25px 0 rgba(0, 0, 0, 0.25);
+    --glass-box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.1);
+    --glass-background-box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.125);
+  }
+  :root[data-theme="dark"] {
+    --glass-box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+    --glass-background-box-shadow: inset 0 0 0 200px rgba(0, 0, 0, 0.4);
+  }
   body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Open-Sans, Helvetica, Sans-Serif;
-    color: #FFFC;
+    color: var(--main-color);
   }
   button {
     cursor: pointer;
@@ -33,7 +45,7 @@ const GlobalStyle = createGlobalStyle`
     position: relative;
     background: inherit;
     overflow: hidden;
-    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: var(--glass-box-shadow);
   }
   .glass > * {
     position: relative;
@@ -49,11 +61,11 @@ const GlobalStyle = createGlobalStyle`
     right: 10px;
     top: -10px;
     bottom: 10px;
-    box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.125);
+    box-shadow: var(--glass-background-box-shadow);
     filter: blur(5px);
   }
   .iconButton {
-    color: #FFFC;
+    color: var(--main-color);
     font-size: 30px;
   }
   .button {
@@ -62,12 +74,12 @@ const GlobalStyle = createGlobalStyle`
     border: none;
     outline: none;
     border-radius: 10px;
-    color: #FFFC;
+    color: var(--main-color);
 		transition: all 200ms ease-out;
   }
   .button:hover {
     transform: translateY(-1px);
-    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: var(--button-hover-box-shadow);
   }
 `;
 

@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { UserContext } from "../Providers/UserProvider";
 import WeatherProvider from "../Providers/WeatherProvider";
-import IconProvider from "../Providers/IconProvider";
 
 import WeatherModule from "./Dashboard/WeatherModule";
 import RoutineModule from "./Dashboard/RoutineModule";
