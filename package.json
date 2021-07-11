@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "electron": "^1.7.9",
+    "electron": "^13.1.6",
+    "electron-rebuild": "^2.3.5",
     "electron-winstaller": "^5.0.0",
+    "electron-bottom-most": "file:electron-bottom-most",
     "foreman": "^2.0.0"
   },
   "dependencies": {
