@@ -8,3 +8,8 @@ export const intToColor = (int) => {
     a = ((int & 0xff000000) >>> 24) / 255;
   return "rgba(" + [r, g, b, a].join(",") + ")";
 };
+
+export const getFileName = (path) => {
+  const splitData = path.split(/(\/|\/\/|\\)/);
+  return splitData[splitData.length - 1];
+}

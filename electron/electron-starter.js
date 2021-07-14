@@ -23,7 +23,14 @@ function createWindow() {
     width: 800,
     height: 600,
     type: "desktop",
-    webPreferences: { nodeIntegration: false, nativeWindowOpen: true }
+    webPreferences: {
+      nodeIntegration: true,
+      enableRemoteModule: true,
+      contextIsolation: false,
+      nodeIntegrationInWorker: true,
+      nodeIntegrationInSubFrames: true,
+      nativeWindowOpen: true
+    }
   });
 
   mainWindow.setFullScreen(true);
@@ -47,6 +54,8 @@ function createWindow() {
 
   let handle = mainWindow.getNativeWindowHandle();
   SetBottomMost(handle);
+
+  mainWindow.webContents.openDevTools();
 }
 
 app.on('ready', createWindow);
