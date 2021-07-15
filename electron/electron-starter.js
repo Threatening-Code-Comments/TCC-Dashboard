@@ -29,7 +29,8 @@ function createWindow() {
       contextIsolation: false,
       nodeIntegrationInWorker: true,
       nodeIntegrationInSubFrames: true,
-      nativeWindowOpen: true
+      nativeWindowOpen: true,
+      webSecurity: false
     }
   });
 

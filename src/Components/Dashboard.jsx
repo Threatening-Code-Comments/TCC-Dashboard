@@ -5,6 +5,7 @@ import WeatherProvider from "../Providers/WeatherProvider";
 import WeatherModule from "./Dashboard/WeatherModule";
 import RoutineModule from "./Dashboard/RoutineModule";
 import QuoteOfTheDay from "./Dashboard/QuoteOfTheDay";
+import ActionCenter from "./Dashboard/ActionCenter";
 
 import { getGridCellSize } from "../Tools";
 import "../Styles/Dashboard/Dashboard.css";
@@ -31,6 +32,7 @@ const Dashboard = () => {
         </WeatherProvider>
         <RoutineModule />
       </div>
+      <ActionCenter />
     </div>
   );
 };
